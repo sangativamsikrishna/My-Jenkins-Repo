@@ -22,5 +22,7 @@ pipeline {
       steps {
         // Deploy the application to a Tomcat server
         sh 'scp /var/lib/jenkins/workspace/reddy/target/helloworld-1.0-SNAPSHOT.jar ubuntu@ 52.23.165.243:/home/ubuntu/apache-tomcat-9.0.73/webapps/manager'
+      }
+    }
   }
 }
